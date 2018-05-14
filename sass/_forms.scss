@@ -1,0 +1,15 @@
+.form-group{
+  margin: 0;
+}
+.form-control{
+  border-radius: 0;
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid #e7e9ea;
+}
+
+@media(max-width: 912px){
+  .form-group{
+    margin-bottom: 10px;
+  }
+}

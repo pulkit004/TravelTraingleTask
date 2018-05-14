@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TravelTriangle | The guide you can trust</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/font-awesome.min.css">
+
+        <script>
+        function formValidation(fields) {
+          var name = document.forms["subscribeForm"]["username"].value;
+          var email = document.forms["subscribeForm"]["useremail"].value;
+          var show = document.getElementsByClassName("invalid-feedback");
+
+          if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+            return (true);
+          }
+          if (/^[a-zA-Z ]+$/.test(name)) {
+            return (true);
+          }
+          for (var i = 0; i < show.length; i += 1) {
+            show[i].style.display = 'block';
+          }          
+          return (false);
+        }
+        </script>
+
+
+  </head>
+
+  <body>
+    
+    <!-- Navbar -->
+    <nav class=" fixed-top header">
+      <a class="brand-name" href="#">traveltriangle</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-tumblr" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item" style="border-right: 1px solid #ffffff26">
+          <a class="nav-link" href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>
+          <a href="#">TravelTriangle</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#" >Pricing</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Cover -->
+    <div class="first-section">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="cover-img">
+          <img src="./assets/images/cover.png"
+            alt="Cover Image" class="img-fluid">
+        </div>
+        <div class="container-fluid">
+          <div class="cover-content">
+            <p class="cover-subheading">
+              latest news
+            </p>
+            <h1 class="cover-heading">
+              bodybuidling best for your health
+            </h1>
+          </div>
+       </div>
+      </div>
+    </div>
+    <!-- Cover End -->
+
+    <!-- Second Section Start -->
+    <div class="second-section">
+    
+      <div class="container-fluid">
+        <!-- Subscribe Form -->
+        <div class="newsletter-box">
+          <form class="subscribe-form" name='subscribeForm' onSubmit="return formValidation(this);">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-2 col-lg-2 col-12">
+                <h6 class="newsletter-heading">signup to newsletter</h6>
+              </div>
+              <div class="col-md-4 col-lg-4 col-12">
+                <div class="form-group">
+                  <input type="text" name="username" class="form-control" placeholder="YOUR NAME" required>
+                  <div class="invalid-feedback">
+                    Please provide valid name!
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-12">
+                <div class="form-group">
+                  <input type="email" name="useremail" class="form-control" placeholder="YOUR EMAIL ADDRESS" required>
+                    <div class="invalid-feedback">
+                      Please provide valid email!
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2 col-12">
+                <input class="btn btn-primary btn-block call-to-action btn-height" type="submit" name="submit" value="SUBSCRIBE NOW">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Content -->
+        <div class="section-content my-4">
+          <div class="row align-items-start">
+            <div class="col-md-9 col-lg-9 col-12">
+              <!-- Blog Card -->
+              <div class="card blog-card">
+                <!-- Section for Image -->
+                <div class="blog-img-section">
+                   <img src="https://images.unsplash.com/photo-1523346811309-5adc3962668a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=54b1ced84d1de88eaa1411839cbf8077&auto=format&fit=crop&w=1189&q=80" alt="blog image one" class="img-fluid img-card-top blog-image">
+                  <i class="fa fa-picture-o mx-auto d-block" aria-hidden="true"></i>
+                </div>
+        
+                <div class="card-body p-3">
+
+                  <h6 class="blog-category">travelling</h6>
+                  <h4 class="blog-heading">be the one to stand out in the crowd</h4>
+        
+                  <!-- Author and Time -->
+                  <ul class="list-unstyle list-inline text-center">
+                    <li class="list-inline-item">
+                      <p class="blog-author">
+                        <i class="fa fa-user fa-fw text-dark" aria-hidden="true"></i>
+                        dike acalister
+                      </p>
+                    </li>
+                    <li class="list-inline-item">
+                      <p class="blog-date">
+                        <i class="fa fa-calendar fa-fw text-dark" aria-hidden="true"></i>
+                        january 16, 2016
+                      </p>
+                    </li>
+                  </ul>
+        
+                  <!-- Content of the blog -->
+                  <div class="blog-content">
+                    <p class="blog-content-one">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="blog-content-two">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum has been the Lorem ipsum.
+                    </p>
+                    <p class="blog-content-three">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                      and more recently with desktop publishing softwares and more recently with desktop publishing softwares.
+                    </p>
+                    <p class="blog-content-four">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      <strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        a galley of type and scrambled it to make a type specimen book.</strong>
+                      It has survived not only five centuries, but also the leap into electronic typesetting
+                    </p>
+                    <p class="blog-content-five">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                      text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                    </p>
+                  </div>
+        
+                  <!-- Tags -->
+                  <div class="blog-tags text-uppercase">
+                    <div class="d-flex flex-row flex-wrap alig-items-center justify-content-center">
+                      <div class="p-1">
+                        <i class="fa fa-tags fa-fw" aria-hidden="true"></i>
+                      </div>
+                      <div class="p-1">
+                        <p>beautiful,</p>
+                      </div>
+                      <div class="p-1">
+                        <p>nature,</p>
+                      </div>
+                      <div class="p-1">
+                        <p>place,</p>
+                      </div>
+                      <div class="p-1">
+                        <p>weather</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <hr>
+        
+                  <!-- Blog Likes and Reviews -->
+                  <div class="blog-likes">
+                    <div class="row align-items-center justify-content-between">
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <ul class="list-unstyle list-inline">
+                          <li class="list-inline-item">
+                            <p>
+                              <i class="fa fa-comments-o fa-fw" aria-hidden="true"></i>
+                              <strong>06</strong> comment
+                            </p>
+                          </li>
+                          <li class="list-inline-item">
+                            <p>
+                              <i class="fa fa-heart-o fa-fw" aria-hidden="true"></i>
+                              <strong>25</strong> like
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <p>
+                          average: 5%
+                          <i class="fa fa-star fa-fw rated" aria-hidden="true"></i>
+                          <i class="fa fa-star fa-fw rated" aria-hidden="true"></i>
+                          <i class="fa fa-star fa-fw rated" aria-hidden="true"></i>
+                          <i class="fa fa-star fa-fw not-rated" aria-hidden="true"></i>
+                          <i class="fa fa-star fa-fw not-rated" aria-hidden="true"></i>
+                        </p>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <div>
+                          <a href="#">
+                            <i class="fa fa-dribbble fa-fw" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+                </div>
+              </div>
+
+              <!-- Next Prev Buttons -->
+              <div class="action-button">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-6">
+                    <button class="btn btn-primary btn-block btn-prev">
+                      <i class="fa fa-long-arrow-left fa-fw" aria-hidden="true"></i>
+                      previous post
+                    </button>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-6">
+                    <button class="btn btn-primary btn-block btn-next">
+                      next post
+                      <i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author Details -->
+              <div class="card author-details">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-row align-items-start justify-content-start wrap-mobile">
+                    <div>
+                      <img src="https://images.unsplash.com/photo-1519917000384-ef7b3485fa47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ffc9027f017fa44390390970f42a5695&auto=format&fit=crop&w=1050&q=80" alt="Author Image" class="img-fluid">
+                    </div>
+                    <div class="p-3 w-100">
+                      <div class="d-flex flex-row align-items-center justify-content-between">
+                        <div class="p-1">
+                          <h6 class="author-name m-0">dike acalister</h6>
+                        </div>
+                        <div class="p-1">
+                          <p class="post m-0">
+                           <a href="">all post</a>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <p class="about-author m-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Author Profile Buttons -->
+
+              <div class="profile-buttons my-4">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-md-3 col-lg-3 col-12">
+                    <div class="btn-group w-100">
+                      <button type="button" class="btn btn-primary call-to-action" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-primary btn-block btn-profile">FACEBOOK 28</button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-12">
+                      <div class="btn-group w-100">
+                        <button type="button" class="btn btn-primary call-to-action" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block btn-profile">TWITTER 36</button>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-12">
+                      <div class="btn-group w-100">
+                        <button type="button" class="btn btn-primary call-to-action" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-tumblr" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block btn-profile">TUMBLR 28</button>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-12">
+                      <div class="btn-group w-100">
+                        <button type="button" class="btn btn-primary call-to-action" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block btn-profile">PINTEREST 32</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+             
+
+              <!-- Recommended Posts -->
+              <div class="card recommended-post">
+                <div class="card-body p-3">
+                  <div class="d-flex flex-row flex-wrap align-items-center justify-content-between">
+                    <div>
+                      <h6 class="text-uppercase m-0 recommended-heading">recommended posts</h6>
+                    </div>
+                    <div>
+                      <div class="d-flex flex-ror align-items-center justify-content-center">
+                        <div class="ml-1">
+                          <button class="btn btn-primary call-to-action btn-slider" onclick="plusDivs(-1)">
+                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="ml-1">
+                          <button class="btn btn-primary call-to-action btn-slider" onclick="plusDivs(1)">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="mySlides">
+                    <div class="row align-items-center">
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1422976280096-9126a41f9e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=547bab7eda7dd51619bddc3e7a9f238b&auto=format&fit=crop&w=1055&q=80"
+                              alt="girl on car vintage fashion" class="img-fluid img-card-top">
+                            <div class="card-body p-2">
+                              <p class="post-title text-center text-uppercase">Girl on car vintage fashion</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1475771742060-8c9a89107e1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb7b55543167cad5d6c91d3706a838f9&auto=format&fit=crop&w=1052&q=80"
+                              alt="women make a tea for cup" class="img-fluid img-card-top">
+                            <div class="card-body p-2">
+                              <p class="post-title text-center text-uppercase">women make a tea for cup</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1520975614863-82f98d4bd70f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d31ffeab8c02d968d2afe8bd6de55739&auto=format&fit=crop&w=1050&q=80"
+                              alt="i found the model 1980's car" class="img-fluid img-card-top">
+                            <div class="card-body p-2">
+                              <p class="post-title text-center text-uppercase">i found the model 1980's car</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="row align-items-center">
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1422976280096-9126a41f9e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=547bab7eda7dd51619bddc3e7a9f238b&auto=format&fit=crop&w=1055&q=80"
+                              alt="girl on car vintage fashion" class="img-fluid img-card-top">
+                            <div class="card-body p-2">
+                              <p class="post-title text-center text-uppercase">Blog 4</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="card">
+                            <img src="https://images.unsplash.com/photo-1475771742060-8c9a89107e1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb7b55543167cad5d6c91d3706a838f9&auto=format&fit=crop&w=1052&q=80"
+                              alt="women make a tea for cup" class="img-fluid img-card-top">
+                            <div class="card-body p-2">
+                              <p class="post-title text-center text-uppercase">Blog 5</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              
+                
+                </div>
+              </div>
+        
+            
+            </div>
+            <!-- Side Section -->
+            <div class="col-md-3 col-lg-3 col-12">
+              <div class="side-section">
+                <div class="card">
+                  <div class="card-body p-3">
+
+                    <!-- Search Form -->
+                    <form class="mb-3" action="">
+                      <div class="d-flex flex-row align-items-start">
+                        <div class="w-100">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                          </div>
+                        </div>
+                        <div>
+                          <button class="btn btn-primary btn-block call-to-action btn-search" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="img-section">
+                      <div class="img-overlay"></div>
+                      <img src="https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=070784ad648398e2c9a488f9cba954aa&auto=format&fit=crop&w=500&q=60"
+                        alt="side image" class="img-fluid long-image">
+                    </div>
+
+                    <!-- Advertisement -->
+                    <a href="#">
+                      <div class="advertisement mt-3 mb-4">
+                        <img src="./assets/images/side.png" class="img-fluid" alt="side-image-two">
+                      </div>
+                    </a>
+                   
+                    <!-- Latest Posts -->
+                    <div class="latest-posts">
+                      <h6 class="text-uppercase text-center latest-posts-heading">latest posts</h6>
+                      <hr>
+                      <div class="blog-list">
+                        <div class="d-flex flex-row">
+                          <div class="p-1">
+                            <img src="https://images.unsplash.com/photo-1446160657592-4782fb76fb99?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8dd288abc4f7448c467ec06a5a4524c4&auto=format&fit=crop&w=1049&q=80"
+                              alt="journey towards a lifestyle" class="img-fluid">
+                          </div>
+                          <div class="p-1">
+                            <a href="#"><p class="post-title">journey towards a lifestyle</p></a>
+                            <div class="d-flex flex-row flex-wrap m-0 justify-content-between align-items-baseline">
+                              <div class="p-0 pt-2">
+                                <p class="post-date">
+                                  jan 16, 2018
+                                </p>
+                              </div>
+                              <div class="p-0">
+                                <p class="post-likes">
+                                  like 255
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr class="mt-0">
+
+                      <div class="blog-list">
+                        <div class="d-flex flex-row">
+                          <div class="p-1">
+                            <img src="https://images.unsplash.com/photo-1519956081710-f49d2dc62e68?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66626e5d38070d2f552f96984f747e8f&auto=format&fit=crop&w=1050&q=80"
+                              alt="fashionable shoes for women" class="img-fluid">
+                          </div>
+                          <div class="p-1">
+                            <a href="#">
+                              <p class="post-title">fashionable shoes for women</p>
+                            </a>
+                            <div class="d-flex flex-row flex-wrap m-0 justify-content-between align-items-baseline">
+                              <div class="p-0 pt-2">
+                                <p class="post-date">
+                                  jan 19, 2018
+                                </p>
+                              </div>
+                              <div class="p-0">
+                                <p class="post-likes">
+                                  like 26
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr class="mt-0">
+
+                      <div class="blog-list">
+                        <div class="d-flex flex-row">
+                          <div class="p-1">
+                            <img src="https://images.unsplash.com/photo-1492528491602-a42e1caf03ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdd82e1d0794bea2e1268e8bdeda2ab5&auto=format&fit=crop&w=1050&q=80"
+                              alt="really awesome adventure" class="img-fluid">
+                          </div>
+                          <div class="p-1">
+                            <a href="#">
+                              <p class="post-title">really awesome adventure</p>
+                            </a>
+                            <div class="d-flex flex-row flex-wrap m-0 justify-content-between align-items-baseline">
+                              <div class="p-0 pt-2">
+                                <p class="post-date">
+                                  jan 23, 2018
+                                </p>
+                              </div>
+                              <div class="p-0">
+                                <p class="post-likes">
+                                  like 23
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr class="mt-0">
+
+
+                      <div class="blog-list">
+                        <div class="d-flex flex-row">
+                          <div class="p-1">
+                            <img src="https://images.unsplash.com/photo-1504329426849-c032b00832e1?ixlib=rb-0.3.5&s=922aadef3c2fcba9090e879756a90ede&auto=format&fit=crop&w=1050&q=80"
+                              alt="man hunting in jungle" class="img-fluid">
+                          </div>
+                          <div class="p-1">
+                            <a href="#">
+                              <p class="post-title">the man hunting in jungle</p>
+                            </a>
+                            <div class="d-flex flex-row flex-wrap m-0 justify-content-between align-items-baseline">
+                              <div class="p-0 pt-2">
+                                <p class="post-date">
+                                  jan 16, 2018
+                                </p>
+                              </div>
+                              <div class="p-0">
+                                <p class="post-likes">
+                                  like 29
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                 
+                    </div>
+       
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+           
+          </div>
+        </div>
+      </div>
+
+      
+    
+    </div>
+    <!-- End -->
+
+
+
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+
+  
+  </body>
+
+</html>

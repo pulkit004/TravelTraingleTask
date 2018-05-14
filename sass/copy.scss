@@ -1,0 +1,331 @@
+// Variables
+$primary-color: #212429;
+$secondary-color: #fafafa;
+$padd-body-left: 40px;
+$padd-body-right: 40px;
+
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    // background-color: #FC466B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 100;
+
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    z-index: 999;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+body{
+    background-color: $secondary-color;
+}
+
+.btn-primary{
+  height: 45px;
+  border-radius: 0;
+  background-color: #292f33;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: none;
+  cursor: pointer;
+}
+.form-control{
+  border-radius: 0;
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid #e7e9ea;
+}
+// Navbar
+
+.navbar{
+  height: 45px;
+  background-color: $primary-color;
+    padding: {
+      left: $padd-body-left;
+      right: $padd-body-right;
+    }
+    i{
+      color: $secondary-color;
+    }
+}
+
+
+// Main Styling
+.first-section{
+
+  .jumbotron{
+    background-color: $primary-color;
+    min-height: 300px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .img-cover{
+      position: absolute;
+      top: 45px;
+      img{
+        max-width: 100%;
+        height: auto;
+        width: 1366px;
+        object-fit: cover;
+        height: 510px;
+      }
+    }
+    .content-cover{
+    z-index: 100;
+    position: absolute;
+    left: 100px;
+    top: 240px;
+    color: white;
+    text-transform: uppercase;
+    width: 30%;
+    line-height: 1.6rem;
+    }
+  }
+
+}
+
+.second-section{
+  margin-top: 255px;
+  padding: {
+   left: 37px;
+    right: 37px;
+  }
+  .newsletter-box{
+    background: #ebeef0;
+    padding: 25px;
+    background: #ebeef0;
+    border: 2px solid #e7e9ea;
+    border-top: none;
+    
+
+
+  }
+  .section-content{
+    .img-section{
+      position: relative;
+      .blog-image{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+      }
+      i{
+        position: absolute;
+        left: 48.5%;
+        font-size: 18px;
+        bottom: -10px;
+        color: #FFF;
+        background: #212121;
+        padding: 3px 4px 2px 4px;
+
+      }
+    }
+    .card{
+      border-radius: 0;
+      .blog-content{
+        p{
+          margin: 25px auto;
+          width: 80%;
+          font-size: 14px;
+          color: #6f6e6e;
+          line-height: 1.6rem;
+          hyphens: auto;
+          word-wrap: break-word;
+        }  
+      }
+      .blog-content-one{
+        text-align: justify;
+      }
+      .blog-content-two{
+        width: 50% !important;
+        font-weight: 500;
+        text-align: center;
+        color: #4f4f4f;
+
+      }
+      .blog-content-three{
+        text-align: justify;
+        text-align-last: center;
+        word-wrap: break-word;
+        word-break: break-all;
+
+
+      }
+      .blog-content-four{
+        text-align: justify;
+        text-align-last: left; 
+      }
+      .blog-content-five{
+        text-align: center;
+        word-break: break-all;
+
+      }
+      .blog-tags{
+        font-size: 12px;
+        color: #6f6e6e;
+        font-weight: 400;
+      }
+      .blog-likes{
+        width: 80%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: #6f6e6e;
+        a{
+          text-decoration: none;
+          color: #6f6e6e;
+          margin-left: 8px;
+        }
+        p{
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+    .side-section{
+      .card{
+        .long-image{
+          height: 550px;
+          object-fit: cover;
+        }
+        .blog-list{
+          .img-fluid{
+            height: 63px;
+            max-width: 85px;
+            object-fit: cover;
+          }
+          p{
+            text-transform: uppercase;
+            font-size: 10px;
+            color: #6f6e6e;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+// Media Query
+
+@media(max-width: 512px){
+  .first-section{
+    .jumbotron{
+      min-height: 200px;
+    }
+  }
+}

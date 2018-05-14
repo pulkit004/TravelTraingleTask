@@ -1,0 +1,151 @@
+.header {
+    background-color: $primary-color;
+    overflow: hidden;
+    z-index: 10;
+    height: 45px;
+    .brand-name{
+        position: absolute;
+        top: 12px;
+        left: 45%;
+        right: 55%;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    a{
+        color: $secondary-color;
+        i{
+        margin-left: 5px;
+        }
+    }
+    .nav{
+        padding-right: 37px;
+    }
+    .nav-link{
+        padding: 0.7rem 1rem;
+        border: 1px solid #ffffff26;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        padding-left: 12px;
+        width: 45px;
+    }
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 225px;
+    margin-top: 45px;
+    z-index: 3;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: $primary-color;
+}
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  border-top: 1px solid #ffffff1a;
+  li{
+    list-style: none;
+    color: $secondary-color;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    a{
+      color: $secondary-color;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 15px;
+    left: 37px;
+    height: 18px;
+    width: 18px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+
+@media(max-width: 912px) {
+    .header{
+          .brand-name{
+           display: none;
+        }
+         .nav{
+                padding-right: 9px;
+
+    }
+        
+
+    }
+    .sidebarIconToggle{
+        left: 9px;
+    }
+   
+}

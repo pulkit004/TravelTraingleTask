@@ -1,0 +1,149 @@
+//Imports SCSS
+@import "variables.scss";
+@import "typography.scss";
+@import "header.scss";
+@import "cover.scss";
+@import "forms.scss";
+@import "buttons.scss";
+
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  background-color: $secondary-color;
+  a{
+    text-decoration: none;
+  }
+}
+.card{
+  border-radius: 0;
+  border-color: #f5f5f7;
+  border: 2px;
+}
+ul{
+  margin-bottom: 0;
+}
+
+hr{
+  background: #f7f7f7;
+  height: 2px;
+  opacity: 0.4;
+  border-color: #f7f7f7;
+}
+
+.second-section{
+  width: 97%;
+  margin: 0 auto;
+  margin-top: 265px;
+  .newsletter-box{
+    background: #ebeef0;
+    padding: 25px;
+    background: #ebeef0;
+    border: 2px solid #e7e9ea;
+    border-top: none;
+    .invalid-feedback{
+      display: none; 
+      width: 100%;
+      margin-top: .25rem;
+      font-size: 80%;
+      background: #dc3545;
+      color: #FFFFFF;
+      padding: 10px;
+    }
+  }
+  .blog-card{
+    .blog-img-section{
+      position: relative;
+      .blog-image{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+      }
+      i{
+        position: absolute;
+        left: 48.5%;
+        font-size: 18px;
+        bottom: -10px;
+        color: #FFF;
+        background: #212121;
+        padding: 3px 4px 2px 4px;
+
+      }
+      
+    }
+  }
+
+  .action-button{
+    margin: 35px auto;
+  }
+  
+  .author-details{
+    img{
+      max-width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+  }
+
+  .recommended-post{
+    margin: 35px auto;
+    a{
+      text-decoration: none;
+    }
+    .card{
+      border: none;
+      margin: 10px auto;
+    }
+  }
+
+  .side-section{
+    .long-image{
+      height: 550px;
+      object-fit: cover;
+    }
+     .blog-list{
+       a{
+         text-decoration: none;
+       }
+      .img-fluid{
+        height: 62px;
+        max-width: 95px;
+        object-fit: cover;
+      }
+      
+    }
+  }
+}
+
+
+@media(max-width: 912px){
+  .second-section{
+    width: 100%;
+    margin-top: 80px;
+    .newsletter-box{
+      padding: 10px;
+    }
+    .blog-card{
+      .blog-img-section{
+        .blog-image{
+          height: 250px;
+        }
+        i{
+          left: 46.5%;
+        }
+      }
+    }
+    .author-details{
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      .wrap-mobile{
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
